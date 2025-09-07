@@ -1,3 +1,5 @@
+package main.groovy
+
 class Main {
     static void main(String[] args) {
 

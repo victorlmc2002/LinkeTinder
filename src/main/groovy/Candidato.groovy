@@ -1,3 +1,5 @@
+package main.groovy
+
 class Candidato implements Pessoa {
     String nome, email, cpf, estado, cep, descricao
     int idade
@@ -20,8 +22,8 @@ class Candidato implements Pessoa {
     List<String> getCompetencias() { competencias }
 
     @Override
-    public String toString() {
-        return "Candidato{Nome: ${nome} | Email: ${email} " +
+     String toString() {
+        return "Candidato: ${nome} | Email: ${email} " +
                 "| CPF: ${cpf} | Idade: ${idade} | Estado: " +
                 "${estado} | CEP: ${cep} | Descrição: ${descricao} " +
                 "| Competências: ${competencias}"

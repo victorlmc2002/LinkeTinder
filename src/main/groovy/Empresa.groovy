@@ -1,3 +1,5 @@
+package main.groovy
+
 class Empresa implements Pessoa {
     String nome, emailCorporativo, cnpj, pais, estado, cep, descricao
     List<String> competencias
@@ -18,8 +20,8 @@ class Empresa implements Pessoa {
     List<String> getCompetencias() { competencias }
 
     @Override
-    public String toString() {
-        return "Candidato{Nome: ${nome} | Email: ${emailCorporativo} " +
+    String toString() {
+        return "Empresa: ${nome} | Email: ${emailCorporativo} " +
                 "| CNPJ: ${cnpj} | País: ${pais} | Estado: " +
                 "${estado} | CEP: ${cep} | Descrição: ${descricao} " +
                 "| Competências: ${competencias}"
