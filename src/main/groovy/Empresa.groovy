@@ -1,6 +1,6 @@
 package main.groovy
 
-class Empresa implements Pessoa {
+class Empresa{
     String nome, emailCorporativo, cnpj, pais, estado, cep, descricao
     List<String> competencias
 
@@ -14,10 +14,6 @@ class Empresa implements Pessoa {
         this.descricao = descricao
         this.competencias = competencias
     }
-
-    String getNome() { nome }
-    String getEmail() { emailCorporativo }
-    List<String> getCompetencias() { competencias }
 
     @Override
     String toString() {

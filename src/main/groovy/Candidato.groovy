@@ -1,6 +1,6 @@
 package main.groovy
 
-class Candidato implements Pessoa {
+class Candidato{
     String nome, email, cpf, estado, cep, descricao
     int idade
     List<String> competencias
@@ -15,11 +15,6 @@ class Candidato implements Pessoa {
         this.descricao = descricao
         this.competencias = competencias
     }
-
-
-    String getNome() { nome }
-    String getEmail() { email }
-    List<String> getCompetencias() { competencias }
 
     @Override
      String toString() {
